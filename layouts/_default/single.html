@@ -36,6 +36,12 @@
             <em class="fas fa-stopwatch post__meta-icon"></em>
             <span class="post__meta-text">{{ i18n "reading_time" .ReadingTime }}</span>
           </li>
+          <li class="post__meta-item">
+            <em class="fas fa-envelope post__meta-icon"></em>
+            <a href="{{ .Site.Params.subscribeUrl }}" target="_blank">
+              {{ .Site.Params.subscribeText }}
+            </a>
+          </li>
         </ul>
 
       {{ end }}

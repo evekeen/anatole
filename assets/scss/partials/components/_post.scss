@@ -236,7 +236,14 @@
 
     &__subscribe {
         a {
-        color: red;
+          @include themed() {
+            color: t('info');
+          }
+        }
+    }
+
+    &__readmore {
+        a {
           @include themed() {
             color: t('info');
           }

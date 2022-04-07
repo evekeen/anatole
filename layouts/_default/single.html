@@ -84,6 +84,11 @@
     </div>
 
     {{ if and (or (eq .Type "post") (eq .Type .Site.Params.postSectionName)) (ne .Page.Params.disableComments true) }}
+      <div class="post__subscribe">
+        <a href="{{ .Site.Params.subscribeUrl }}" target="_blank">
+          {{ .Site.Params.subscribeTextPost }}
+        </a>
+      </div>
       {{- if .Site.DisqusShortname -}}
         <div id="comment">
           <h2>{{ i18n "comments" }}</h2>

@@ -233,4 +233,13 @@
       }
     }
   }
+
+    &__subscribe {
+        a {
+        color: red;
+          @include themed() {
+            color: t('info');
+          }
+        }
+    }
 }

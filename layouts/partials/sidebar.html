@@ -31,6 +31,11 @@
 
       {{ end }}
     </ul>
+    <div class="sidebar__subscribe">
+      <a href="{{ .Site.Params.subscribeUrl }}" target="_blank">
+        {{ .Site.Params.subscribeText }}
+      </a>
+    </div>
   </div>
   {{- partial "footer.html" (dict "context" . "footerClassModifier" "sidebar") -}}
 </div>

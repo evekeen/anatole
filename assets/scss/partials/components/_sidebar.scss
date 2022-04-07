@@ -71,4 +71,13 @@
       }
     }
   }
+
+  &__subscribe {
+    margin: 0 auto;
+      a {
+        @include themed() {
+          color: t('info');
+        }
+      }
+  }
 }

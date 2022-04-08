@@ -73,7 +73,7 @@
   }
 
   &__subscribe {
-    margin: 0 auto;
+    text-align: center;
       a {
         @include themed() {
           color: t('info');

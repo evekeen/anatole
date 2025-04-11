@@ -14,7 +14,7 @@
       </div>
 
     {{ end }}
-    <div class="post__content">
+    <div class="post__content full-post">
       <h1>{{ title .Title }}</h1>
       {{ if or (eq .Type "post") (eq .Type .Site.Params.postSectionName) }}
         <ul class="post__meta">
